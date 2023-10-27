@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import "./Navbar.css"
 const Navbar = () => {
   return (
     <>
-      <header className="navbar-container">
+      <header className="navbar-container ">
+      <Navbar className="main-wrapper"> 
         <div className="logo">
           <svg
             width="50"
@@ -28,27 +29,29 @@ const Navbar = () => {
           <span>Funcity</span>
         </div>
         <nav className="nav">
-          <ul>
-            <li>
-              <Link>Home</Link>
+          <ul> 
+            <li className="uppercase font-weight500">
+              <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link>Movie</Link>
+            <li className="uppercase font-weight500">
+              <Link to="/Movie">Movie</Link>
             </li>
-            <li>
-              <Link>TV show</Link>
+            <li className="uppercase font-weight500">
+              <Link to="/TvShow">TV show</Link>
             </li>
-            <li>
-              <Link>Web Series</Link>
+            <li className="uppercase font-weight500">
+              <Link to="/webseries">Web Series</Link>
             </li>
           </ul>
         </nav>
         <div>
           <input placeholder="Search Movie" />
         </div>
+        </Navbar>
       </header>
     </>
   );
 };
 
 export default Navbar;
+   

@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import {Routes,Route} from "react-router-dom"
-import Navbar from './component/Navbar';
+import Navbar from './component/Navbar/Navbar';
 import Home from './pages/Home';
 import Movie from './pages/Movie';
 import TvShow from './pages/Tv-Show';
