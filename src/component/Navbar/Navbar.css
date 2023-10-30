@@ -17,18 +17,23 @@
     align-items: center;
     color: #fff;
     width: 20%;
+   
   }
   .logo span {
     font-size: 32px;
     font-weight: 600;
 }
-  .nav{
-    width: 40%;
-  }
-  .nav ul{
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+  nav ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    gap: 24px;
   }
 
   .nav ul li a{
@@ -41,3 +46,8 @@
   .nav ul li a:hover{
         color: var(--primary);
      }
+     /* on scroll */
+     .navbar-container.sticky {
+      background-color: #000;
+    
+    }

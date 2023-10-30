@@ -30,7 +30,7 @@ a{
   font-weight: 500;
 }
 .main-wrapper{
-  max-width: 85%;
+  max-width: 90%;
   width: 100%;
   margin: 0 auto;
 }
@@ -53,4 +53,24 @@ a{
 }
 .primarytext:hover{
   color: var(--primary);
+}
+.primarysvg svg path{
+  fill: var(--primary);
+}
+.flex-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.center-content{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-white{
+  color: var(--white);
+}
+.w-60{
+  width: 60%;
 }
