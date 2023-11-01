@@ -6,12 +6,17 @@
 :root{
   --primary: #e91e63;
   --white:#fff;
+  --raisin-black: hsl(228, 13%, 15%);
+  --gunmetal-1: hsl(229, 15%, 21%);
+    --gunmetal-2: hsl(216, 22%, 18%);
 }
 /* font-weight */
 :root{
   --fw-700:700;
   --fw-500:500;
   --transition-1 : 0.15s ease;
+  --padding-block:100px;
+  --margin10:10px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 body{
@@ -19,6 +24,9 @@ body{
 }
 a{
   text-decoration: none;
+}
+p{
+  font-size: 12px;
 }
 .uppercase{
   text-transform: uppercase;
@@ -30,7 +38,7 @@ a{
   font-weight: 500;
 }
 .main-wrapper{
-  max-width: 90%;
+  max-width: 95%;
   width: 100%;
   margin: 0 auto;
 }
@@ -48,10 +56,12 @@ a{
   border-radius: 50px;
   transition: var(--transition-1);
 }
-.btn:hover{
-  background-color: var(--primary);
+.btn:hover, .btn:focus {
+  background-color: transparent;
+  border: 2px solid var(--white);
 }
-.primarytext:hover{
+
+.primarytext:hover, .primary-color{
   color: var(--primary);
 }
 .primarysvg svg path{
@@ -73,4 +83,31 @@ a{
 }
 .w-60{
   width: 60%;
+}
+.small-heading{
+  font-size: 16px;
+  font-weight: var(--fw-500);
+  letter-spacing: 1px;
+}
+.margin-bottom10{
+  margin-bottom: var(--margin10);
+}
+                          
+.btn{
+  color: var(--white);
+  background: var(--raisin-black);
+  font-size: var(--fs-11);
+  font-weight: var(--fw-500);
+  border: 2px solid var(--gunmetal-1);
+  padding: 12px 26px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.btn a{
+  color: var(--white);
+  display: block;
+}
+.flex-end{
+  justify-content: flex-end;
 }

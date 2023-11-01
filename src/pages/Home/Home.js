@@ -1,15 +1,16 @@
 import React from 'react'
 import "./Home.css"
+import Cards from "../../component/Cards"
 const Home = () => {
     return (
         <>
             <section className="home-banner ">
                 <div class="hero-content main-wrapper">
 
-                    <p class="hero-subtitle">Filmlane</p>
+                    <p class="hero-subtitle primary-color">Filmlane</p>
 
                     <h1 class="h1 hero-title">
-                        Unlimited <strong>Movie</strong>,  TVs Shows,  &amp;   More.
+                        Unlimited <strong className="primary-color">Movie</strong>,  TVs Shows,  &amp;   More.
                     </h1>
 
                     <div class="meta-wrapper">
@@ -83,7 +84,7 @@ const Home = () => {
 
                     </div>
 
-                    <button class="btn btn-primary pointer">
+                    <button class="btn btn-primary pointer ">
                         <svg xmlns="http://www.w3.org/2000/svg" height="12" width="12" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Play</title><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z" fill="#fff"></path></svg>
                         <span>Watch now</span>
                     </button>
@@ -91,7 +92,39 @@ const Home = () => {
                 </div>
             </section>
 
+            <section className="upcoming">
+                <div className="main-wrapper">
+                    <h6 className="primary-color uppercase small-heading margin-bottom10">
+                        Online Streaming
+                    </h6>
+                    <div className="flex-items">
+                        <h1 className="text-white">
+                            Upcoming Movies
+                        </h1>
+                        <div className="flex-items">
+                            <button className="btn">
+                                <a href='#'>
+                                    Movies
+                                </a>
+                            </button>
+                            <button className="btn">
+                                <a href='#'>
+                                    Tv shows
+                                </a>
+                            </button>
+                            <button className="btn">
+                                <a href='#'>
+                                    Anime
+                                </a>
+                            </button>
+                        </div>
 
+                    </div>
+                </div>
+                {/* cards */}
+                <Cards />
+
+            </section>
         </>
     )
 }

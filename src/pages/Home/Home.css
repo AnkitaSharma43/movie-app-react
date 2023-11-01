@@ -1,6 +1,7 @@
+
 .home-banner{
     position: relative;
-    background-image: url(../assets/hero-bg.jpg);
+    background-image: url(../../assets/hero-bg.jpg);
     background-size: cover;
     background-position: center;
     min-height: 750px;
@@ -33,7 +34,7 @@
     margin-bottom: 50px;
 }
 .btn-primary {
-    background: rgb(17 20 29);
+   border: 2px solid var(--primary);
 }
 .btn:hover svg{
     fill: #000;
@@ -61,4 +62,10 @@
     font-size: 14px;
     font-weight: var(--fw-500);
     transition: var(--transition-1);
+}
+/* upcoming */
+.upcoming{
+    background-color: #000;
+    padding-top:  var(--padding-block);
+    padding-bottom:  var(--padding-block);
 }

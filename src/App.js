@@ -2,8 +2,8 @@ import React from 'react'
 import './App.css';
 import {Routes,Route} from "react-router-dom"
 import Navbar from './component/Navbar/Navbar';
-import Home from './pages/Home';
-import Movie from './pages/Movie';
+import Home from './pages/Home/Home';
+import Movie from "./pages/Movies/index"
 import TvShow from './pages/Tv-Show';
 import WebSeries from './pages/Web-Series';
 const App = () => {
