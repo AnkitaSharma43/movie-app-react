@@ -56,7 +56,9 @@ nav ul {
   background-color: #000;
 
 }
-
+.navbar-container.navbar-bg{
+  background-color: #000;
+}
 
 /* custom  selectbox*/
 

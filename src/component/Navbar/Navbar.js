@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -21,11 +21,14 @@ const Navbar = () => {
     };
   }, []);
 
+  const {pathname} = useLocation()
+  const newPathName = pathname.split("/")
+
   const navbarClass = `navbar-container ${isSticky ? "sticky" : ""}`;
 
   return (
     <>
-      <header className={navbarClass}>
+      <header className={newPathName[1] ==="" ? navbarClass :"navbar-container navbar-bg"}>
         <div className="main-wrapper">
           <nav>
             <div className="logo">
