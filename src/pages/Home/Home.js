@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import Cards from "../../component/Cards"
+import Services from '../Services.js'
 const Home = () => {
     return (
         <>
@@ -123,9 +124,11 @@ const Home = () => {
                 </div>
                 {/* cards */}
                 <Cards />
-
             </section>
-        </>
+            {/* services */}
+            <Services/>
+            
+                    </>
     )
 }
 
