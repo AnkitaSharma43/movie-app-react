@@ -86,6 +86,9 @@ const Navbar = () => {
                   </button>
 
                 </div>
+                <button className="btn uppercase btn-primary">
+                  Sign IN
+                </button>
               </div>
             </div>
           </nav>

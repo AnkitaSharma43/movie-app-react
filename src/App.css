@@ -113,7 +113,9 @@ li {
   width: 100%;
   margin: 0 auto;
 }
-
+.uppercase{
+  text-transform: uppercase !important;
+}
 .btn {
   color: var(--white);
   font-size: 11px;
@@ -135,7 +137,10 @@ li {
   background-color: transparent;
   border: 2px solid var(--white);
 }
-
+.btn-primary:hover{
+  background-color: var(--primary);
+  border-color: transparent;
+}
 .primarytext:hover,
 .primary-color {
   color: var(--primary);
