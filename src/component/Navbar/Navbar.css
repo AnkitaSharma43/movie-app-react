@@ -61,7 +61,7 @@ nav ul {
 /* custom  selectbox*/
 
 .custom-select {
-  border: 2px solid #fff;
+  border:none;
   border-radius: 4px;
   padding: 2px 5px;
   position: relative;
@@ -82,4 +82,7 @@ nav ul {
 
 button.custom-select:focus .option{
   display: block !important;
+}
+.nav-btn{
+  margin-left: 15px;
 }
