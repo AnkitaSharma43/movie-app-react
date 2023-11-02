@@ -99,9 +99,9 @@ const Home = () => {
                         Online Streaming
                     </h6>
                     <div className="flex-items">
-                        <h1 className="text-white">
-                            Upcoming Movies
-                        </h1>
+                        {/* <h1 className="text-white">
+                            Tranding Movies
+                        </h1> */}
                         <div className="flex-items">
                             <button className="btn">
                                 <a href='#'>
