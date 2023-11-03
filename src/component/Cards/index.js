@@ -8,9 +8,11 @@ const Cards = () => {
     return (
         <>
             <div className="main-wrapper">
+             
                 <div className="movie-card flex-items">
                     {/* 1 */}
                     <div className="card">
+                    
                         <a href="#">
                             <img src={Northman} height={400} width={300} />
                         </a>

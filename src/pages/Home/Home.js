@@ -95,14 +95,15 @@ const Home = () => {
 
             <section className="upcoming">
                 <div className="main-wrapper">
-                    <h6 className="primary-color uppercase small-heading margin-bottom10">
-                        Online Streaming
-                    </h6>
-                    <div className="flex-items">
-                        <h1 className="text-white">
+               
+                    <h1 className="text-white margin-bottom10">
                             Upcoming Movies
                         </h1>
-                        <div className="flex-items">
+                    <div className="flex-items ">
+                    <h3 className="primary-color uppercase small-heading ">
+                        Online Streaming
+                    </h3>
+                        <div className="flex-items ">
                             <button className="btn">
                                 <a href='#'>
                                     Movies
