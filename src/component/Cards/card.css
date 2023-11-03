@@ -8,6 +8,8 @@
 }
 .movie-card{
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 .movie-card .card{
     width: 300px;
