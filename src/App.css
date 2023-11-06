@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 :root {
   --primary: #e91e63;
   --white: #fff;
@@ -12,7 +14,8 @@
   --gunmetal-1: hsl(229, 15%, 21%);
   --gunmetal-2: hsl(216, 22%, 18%);
   --gainsboro: hsl(0, 7%, 88%);
-  --dark:#000;
+  --dark: #000;
+  --rich-black-fogra-29: hsl(225, 25%, 9%);
 }
 
 /* font-weight */
@@ -105,17 +108,21 @@ li {
 .font-weight500 {
   font-weight: 500;
 }
-.relative{
+
+.relative {
   position: relative;
 }
+
 .main-wrapper {
   max-width: 95%;
   width: 100%;
   margin: 0 auto;
 }
-.uppercase{
+
+.uppercase {
   text-transform: uppercase !important;
 }
+
 .btn {
   color: var(--white);
   font-size: 11px;
@@ -137,13 +144,20 @@ li {
   background-color: transparent;
   border: 2px solid var(--white);
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
   background-color: var(--primary);
   border-color: transparent;
 }
+
 .primarytext:hover,
 .primary-color {
   color: var(--primary);
+}
+
+.primary-hoveredsvg:hover svg path {
+  fill: var(--primary);
+  transition: var(--transition-1);
 }
 
 .primarysvg svg path {
@@ -163,12 +177,23 @@ li {
   align-items: center;
 }
 
+li a {
+  color: var(--white);
+}
+
+footer .submenus li a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .text-white {
   color: var(--white);
 }
-.text-dark{
+
+.text-dark {
   color: var(--dark);
 }
+
 .w-60 {
   width: 60%;
 }
@@ -181,6 +206,16 @@ li {
 
 .margin-bottom10 {
   margin-bottom: var(--margin10);
+}
+
+.footer-icon {
+  width: 35px;
+  height: 35px;
+  background: var(--dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -204,6 +239,21 @@ li {
   justify-content: flex-end;
 }
 
-.flex-center{
+.flex-center {
   justify-content: center;
+}
+
+.margin10 {
+  margin: var(--margin10) 0;
+}
+
+footer {
+  background-color: #1f2229;
+  padding: 30px 0;
+}
+
+.divider {
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  margin-bottom: 24px;
 }

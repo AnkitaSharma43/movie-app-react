@@ -25,7 +25,7 @@ const Cards = () => {
           return (
             <>
               <div>
-                <h1 className="text-white">{movie.title}</h1>
+                <h1 className="text-white margin-bottom10">{movie.title}</h1>
               </div>
               <div className="movie-card flex-items">
               {movie.movies.slice(0, itemsToShow).map((list, index) => {
@@ -130,7 +130,9 @@ const Cards = () => {
                 })}
               </div>
               {itemsToShow < movie.movies.length && (
-                <button onClick={handleShowMore}>Show More</button>
+           <div className=" movie-cardbtn flex-center flex-items margin10">
+           <button className="btn" onClick={handleShowMore}>Show More</button>
+           </div>
               )}
             </>
           );
