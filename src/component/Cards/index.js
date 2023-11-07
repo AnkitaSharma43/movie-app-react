@@ -6,9 +6,11 @@ import Northman from "../../assets/Northman.png";
 import doctorStrange from "../../assets/doctor-strange.png";
 import { useDispatch, useSelector } from "react-redux";
 import { getHomedata } from "../../features/home-page/HomePageSlice";
+import { useNavigate } from "react-router-dom";
 const Cards = () => {
   const [itemsToShow, setItemsToShow] = useState(8);
   const { responseData } = useSelector((state) => state.homeData);
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   console.log("responseData", responseData);
   useEffect(() => {
@@ -18,6 +20,10 @@ const Cards = () => {
   const handleShowMore = () => {
     setItemsToShow(itemsToShow + 8);
   };
+
+  const handlecarddetails = () => {
+    navigate("/cardDetails")
+  }
   return (
     <>
       <div className="main-wrapper">
@@ -27,7 +33,7 @@ const Cards = () => {
               <div>
                 <h1 className="text-white margin-bottom10">{movie.title}</h1>
               </div>
-              <div className="movie-card flex-items">
+              <div className="movie-card flex-items" onClick={handlecarddetails}>
               {movie.movies.slice(0, itemsToShow).map((list, index) => {
                   return (
                     <>

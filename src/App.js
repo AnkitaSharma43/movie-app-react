@@ -7,6 +7,7 @@ import Movie from "./pages/Movies/index"
 import TvShow from './pages/Tv-Show';
 import WebSeries from './pages/Web-Series';
 import Footer from './component/Footer';
+import CardDetails from './component/Cards/CardDetails';
 const App = () => {
   return (
    <>
@@ -16,6 +17,7 @@ const App = () => {
       <Route path='/Movie'  element={<Movie/>}/>
       <Route path='/TvShow'  element={<TvShow/>}/>
       <Route path='/webseries'  element={<WebSeries/>}/>
+      <Route path='/cardDetails'  element={<CardDetails/>}/>
     </Routes>
     <Footer/>
    </>
