@@ -67,6 +67,7 @@ const Navbar = () => {
 
               <span>Funcity</span>
             </div>
+            
             <div className="flex-items w-60">
               <div className="nav">
                 <ul>

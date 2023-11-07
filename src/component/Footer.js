@@ -1,9 +1,11 @@
 import React from 'react'
 
 import { Link, useLocation } from "react-router-dom";
+import  card from "../assets/footer-bottom-img.png"
 const Footer = () => {
   return (
     <>
+    <div className="footer-wrap">
       <footer
         className=""
 
@@ -102,6 +104,17 @@ const Footer = () => {
 
         </div>
       </footer>
+      <div className=" bg-dark copy-rightwrap">
+        <div className="main-wrapper flex-items">
+          <p className="text-white">
+            © 2023 codewithsadee. All Rights Reserved
+          </p>
+          <Link> 
+          <img src={card} width="200" height="20" alt="cards"/>  </Link>
+
+        </div>
+      </div>
+      </div>
     </>
   )
 }

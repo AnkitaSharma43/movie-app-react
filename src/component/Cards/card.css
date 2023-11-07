@@ -20,15 +20,17 @@
     width: 300px;
     min-height: 475px;
     padding: 20px;
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 5px solid transparent;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-.movie-card .card:hover , .movie-cardbtn .btn:hover, .movie-cardbtn .btn:focus {
+ .movie-cardbtn .btn:hover, .movie-cardbtn .btn:focus {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2);
 }
 .movie-card .card:hover{
     border-bottom: 5px solid var(--white);
+    box-shadow: 0 0 10px #E91E63, 0 0 20px rgba(255, 255, 255, 0.2)
 }
 
 .movie-cardbtn .btn{
