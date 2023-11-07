@@ -67,7 +67,7 @@ const Navbar = () => {
 
               <span>Funcity</span>
             </div>
-            
+          
             <div className="flex-items w-60">
               <div className="nav">
                 <ul>
@@ -183,7 +183,13 @@ const Navbar = () => {
                 </button>
               </div>
             </div>
+            {/* toggle button */}
+            <div className="toggle">
+          
+          <svg width="30px" height="30px" viewBox="-30.72 -30.72 1085.44 1085.44" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#fff" stroke="#fff" stroke-width="68.608"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M64 192h896v76.8H64V192z m0 281.6h896v76.8H64V473.6z m0 281.6h896V832H64v-76.8z" fill="#fff"></path></g></svg>
+        </div>
           </nav>
+          
         </div>
       </header>
 

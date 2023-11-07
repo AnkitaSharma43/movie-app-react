@@ -89,4 +89,8 @@ button.custom-select:focus .option{
   margin-left: 15px;
 }
 
-
+@media (max-width:992px) {
+  .nav ul{
+    display:  none;
+  }
+}
