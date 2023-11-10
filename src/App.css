@@ -38,6 +38,7 @@
   --fs-10: 13px;
   --fs-11: 12px;
   --fs-12: 11px;
+  --padding-block80: 80px;
 }
 
 @media (min-width: 1200px) {
@@ -51,7 +52,6 @@
   }
 
 }
-
 
 
 body {
@@ -93,6 +93,11 @@ p {
   font-size: 12px;
 }
 
+button {
+  background: transparent;
+  border: none;
+  font-family: 'Poppins', sans-serif !important;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -150,13 +155,13 @@ li {
   border-color: transparent;
 }
 
-.primarytext:hover,
+.primarytext:hover,span.primarytext:hover,
 .primary-color {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .primary-hoveredsvg:hover svg path {
-  fill: var(--primary);
+  fill: var(--primary) !important;
   transition: var(--transition-1);
 }
 
@@ -263,4 +268,19 @@ footer {
 }
 .copy-rightwrap{
   padding:  20px 0;
+}
+.absolute-content{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* .movie-detail-content {
+  max-width: 620px;
+} */
+.flex-start{
+  justify-content: flex-start;
+}
+.gap40{
+  gap: 40px;
 }
